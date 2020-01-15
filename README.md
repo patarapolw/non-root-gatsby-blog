@@ -23,7 +23,8 @@ I have also tried [Gridsome](https://gridsome.org/), which is in many ways simil
 
 ## Why
 
-- Gatsby should be fast.
+- Gatsby should be fast. Also SEO optimized with [some additional settings](https://www.gatsbyjs.org/docs/add-seo-component/), or perhaps with [Helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)
+  - It's more than SEO, really. I also need a correct preview on Facebook / Twitter / Discord.
 - To write a blog while seeing Gatsby's folder structure is a turn off. Seeing only `/data` is so focused mode.
 - Sharing themed blog is easy, because it is just a part of the monorepo. Writing `.gitignore` is easy as well.
 - I can always author subpackages, like, probably, a newer version of [q2filter](https://github.com/patarapolw/q2filter). Testing is easier than ever with a monorepo.
