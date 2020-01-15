@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-blog-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "blog": "cli.js"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "tsc": "tsc",
+    "build": "gatsby build",
+    "postbuild": "node ./postbuild.js"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "dot-prop": "^5.2.0",
+    "fs-extra": "^8.1.0",
+    "gatsby": "^2.18.22",
+    "gatsby-plugin-static-folders": "^1.0.1",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-remark": "^2.6.48",
+    "js-yaml": "^3.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
