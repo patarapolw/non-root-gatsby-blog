@@ -78,7 +78,7 @@ function customDateStringToEpoch (date) {
 
   if (m.isValid()) {
     /**
-     * moment().unix() is in milliseconds
+     * moment().unix() is in seconds
      */
     return m.unix() * 1000
   }
