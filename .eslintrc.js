@@ -28,6 +28,7 @@ module.exports = {
   ],
   rules: {
     'react/prop-types': 0,
+    'import/default': 0,
     'arrow-parens': ['error', 'always'],
     'quote-props': ['error', 'as-needed'],
     'comma-dangle': ['error', 'always-multiline'],

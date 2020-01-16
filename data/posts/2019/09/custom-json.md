@@ -12,7 +12,7 @@ I have always wanted `JSON.parse` and `JSON.stringify` to deal with custom objec
 
 BTW, I have successfully done so in two languages, Python and JavaScript (TypeScript).
 
-===
+<!-- excerpt_separator -->
 
 In Python, you have to override `default` and `object_hook` for `json.dumps` and `json.loads` respectively.
 

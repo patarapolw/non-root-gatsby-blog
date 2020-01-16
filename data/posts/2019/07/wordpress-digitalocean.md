@@ -11,7 +11,7 @@ tag:
 
 This is a thing that can be done easy way, if you strictly follow these steps. The downside of DigitalOcean, is that if you messed up, no one will help you debug.
 
-===
+<!-- excerpt_separator -->
 
 The steps are
 

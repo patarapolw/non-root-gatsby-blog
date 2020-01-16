@@ -16,7 +16,7 @@ tag:
 - Dev hobby
 - Language learning (Japanese, Chinese)
 
-===
+<!-- excerpt_separator -->
 
 ## Office work
 

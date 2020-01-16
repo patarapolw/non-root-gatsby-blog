@@ -12,7 +12,7 @@ tag:
 
 Apparently, it is possible to make Kotlin have a very simple dynamic typing, like JavaScript, with a JSON library -- [Kotson](https://github.com/SalomonBrys/Kotson), with some [tweaks](https://github.com/patarapolw/rep2recall-kt/blob/master/src/main/kotlin/rep2recall/json/JsonUtil.kt).
 
-===
+<!-- excerpt_separator -->
 
 In JavaScript, there are only very few types, String, Number, Boolean, Null, Undefined, Object; and Array, which is a special kind of object.
 

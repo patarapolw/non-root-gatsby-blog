@@ -13,7 +13,7 @@ I have tried to install Linux ([Elementary OS](https://elementary.io/)) on both 
 
 Of course, there is an official troubleshooting here -- <https://help.ubuntu.com/stable/ubuntu-help/net-wireless-troubleshooting.html.en>
 
-===
+<!-- excerpt_separator -->
 
 ## Immediate connection fix
 

@@ -10,7 +10,7 @@ tag:
 
 I tried to make it work best for both Node.js runtime and web browser.
 
-===
+<!-- excerpt_separator -->
 
 A result is (<https://github.com/szokodiakos/typegoose/issues/187>)
 

@@ -14,7 +14,7 @@ The new branch called `gh-pages` will be created, with only built elements, no o
 
 See the package here <https://www.npmjs.com/package/gh-pages>
 
-===
+<!-- excerpt_separator -->
 
 To publish elsewhere, e.g. [Heroku](https://www.heroku.com/), it can be more complex. I resorted to a Node script, rather than CLI.
 

@@ -9,7 +9,7 @@ tag:
 
 If you have used TypeScript long enough, you should realize that you can create `declaration.d.ts` with `declare module 'javascript-module'` for untyped JavaScript modules.
 
-===
+<!-- excerpt_separator -->
 
 However, you can go far beyond that. Indeed, the best way, if you have time, is to contribute to <https://github.com/DefinitelyTyped/DefinitelyTyped>. However, the process is slow, and can take around 1 week for @types repo to get updated.
 

@@ -14,7 +14,7 @@ Why Vue? Because Vue's [Vuetify](https://vuetifyjs.com/en/)'s Material design lo
 
 An example app I have used all the above-mentioned in the header is <https://github.com/patarapolw/nltkpass-app>
 
-===
+<!-- excerpt_separator -->
 
 Since I use both Vue-CLI and Apache Cordova, there are two ways to do this.
 

@@ -12,7 +12,7 @@ As Electron is actually an containerized extended Chromium web engine, I reckon 
 
 As for a lazy reader, you can see my example project at <https://github.com/patarapolw/rep2recall-sqlite>, which is Python Flask in Electron. There is also a pure TypeScript version -- <https://github.com/patarapolw/e-rep2recall>
 
-===
+<!-- excerpt_separator -->
 
 ## Finding a random PORT
 

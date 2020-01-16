@@ -11,7 +11,7 @@ So, I googled for solution, and found this <https://forums.virtualbox.org/viewto
 
 Another problem is that there is no x64 enabled in VirtualBox, despite running Windows x64 <https://superuser.com/questions/866962/why-does-virtualbox-only-have-32-bit-option-no-64-bit-option-on-windows-7>
 
-===
+<!-- excerpt_separator -->
 
 In short,
 

@@ -12,7 +12,7 @@ py2app and py2exe are how to compile a Python package bundle into a single file 
 
 Root causes of the problem running `python setup.py py2app` include the following.
 
-===
+<!-- excerpt_separator -->
 
 - Misplaced data file, default not in the correct directory
 - `passlib` in `py2app` defaulted to using `bcryptor` instead of `bcrypt`

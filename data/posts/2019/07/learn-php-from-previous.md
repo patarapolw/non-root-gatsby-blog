@@ -12,7 +12,7 @@ PHP is a bit different from other languages, like Python or Dart, in that, it is
 
 I would actually recommend this -- <https://phptherightway.com/>, and it is quite updated.
 
-===
+<!-- excerpt_separator -->
 
 ## Installing PHP
 

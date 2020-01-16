@@ -15,7 +15,7 @@ I formularized the concept on memorability based on pronounceability with NLTK a
 
 [Here](https://github.com/patarapolw/memorable-password/tree/master/analysis) is the result.
 
-===
+<!-- excerpt_separator -->
 
 ## Random characters
 

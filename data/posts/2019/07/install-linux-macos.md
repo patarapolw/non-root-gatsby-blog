@@ -9,7 +9,7 @@ tag:
 
 Installing Linux is never hard on Windows, with supported hardwares, e.g. Dell, but on macOS, it is another beast; probably because of a very specific proprietary hardware -- main harddisk and cannot install additional internal harddisk. Furthermore, I have both macOS 11" (2015) ad 13" (2017) with different problems. After, it is never as easy as installing Windows.
 
-===
+<!-- excerpt_separator -->
 
 ## Major obstacles
 

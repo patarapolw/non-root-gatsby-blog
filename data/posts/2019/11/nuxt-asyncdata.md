@@ -11,7 +11,7 @@ Nuxt.js is a framework for making JavaScript apps a more static site, that is, p
 
 However, when it is made more static, reactivity is sacrificed.
 
-===
+<!-- excerpt_separator -->
 
 So, I use `asyncData` to create teasers, and AJAX (fetch) to get more data, as can be seen on how this blog was made.
 

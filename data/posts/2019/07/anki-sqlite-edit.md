@@ -13,7 +13,7 @@ tag:
 
 [\*.apkg file structure](https://github.com/ankidroid/Anki-Android/wiki/Database-Structure) is a zip of at least two files.
 
-===
+<!-- excerpt_separator -->
 
 ```
 .

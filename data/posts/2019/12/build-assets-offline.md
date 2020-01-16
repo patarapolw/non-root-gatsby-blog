@@ -9,7 +9,7 @@ tag:
 
 **I have always wondered why I have to run `yarn build` scripts online on Heroku / Netlify / Now.sh**; which takes time, does not guarantee to succeed and HTML / JavaScript / CSS are cross platform anyway.
 
-===
+<!-- excerpt_separator -->
 
 Long time ago, I have found [gh-pages](https://www.npmjs.com/package/gh-pages) and wrote a blog about it -- https://www.polvcode.dev/post/2019/08/gh-pages -- which is mostly about publishing to GitHub Pages, and Heroku.
 

@@ -9,7 +9,7 @@ tag:
 
 I wonder how could I make it available across projects???
 
-===
+<!-- excerpt_separator -->
 
 ```python
 from time import time

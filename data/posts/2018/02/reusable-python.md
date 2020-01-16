@@ -8,7 +8,7 @@ tag:
 
 I am programming in modules, and it is easy to share `*.py` within a project. How?
 
-===
+<!-- excerpt_separator -->
 
 - Always code in a `def` or a `class`. Never code outside one.
 - For main code, never code outside a block, but code main code inside `if __name__ == '__main__'`:

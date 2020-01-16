@@ -9,7 +9,7 @@ tag:
 
 Right now, I only know one website that allows me to host HTML as full webpage that supports static JavaScript, that is [GitHub Pages](https://pages.github.com), which might not be truly static, if you have some good API supported in the background, e.g. Disqus, or Heroku.
 
-===
+<!-- excerpt_separator -->
 
 However, it seems that many kinds of CSS/JavaScript on GitHub Pages might not always loaded if it conflicts with Jekyll, or for some other reasons (as I described in Cogear.js; SCSS-generated CSS just doesn't load.)
 

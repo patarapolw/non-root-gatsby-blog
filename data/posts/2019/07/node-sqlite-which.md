@@ -10,7 +10,7 @@ tag:
 
 The official implementation is actually [`sqlite3`](https://www.npmjs.com/package/sqlite3), and there are at least 2 packages built on top of it -- [`sqlite`](https://www.npmjs.com/package/sqlite) and [`TypeORM`](https://typeorm.io/#/). There are also other packages that can run SQLite including [`better-sqlite3`](https://www.npmjs.com/package/better-sqlite3) and [`sql.js`](https://github.com/kripken/sql.js/).
 
-===
+<!-- excerpt_separator -->
 
 ## Considerations
 

@@ -14,7 +14,7 @@ Just don't install anything into System's programming languages, unless you have
 
 For Python, [pyenv](https://github.com/pyenv/pyenv) and there is [Virtual Environment](https://docs.python-guide.org/dev/virtualenvs/), which is quite opinionated. I use [poetry](https://poetry.eustace.io/), though. I also tried to fit `/.venv/` into the project folder, which requires additional settings.
 
-===
+<!-- excerpt_separator -->
 
 Also, System's Python doesn't seem to be protected with `sudo`... Unprotected is bad, and you can do something wrong...
 

@@ -11,7 +11,7 @@ tag:
 
 GitHub Pages, powered by Jekyll is great, but it lacks some useful features, mostly features that require a real database. Solutions? -- link to outside servers.
 
-===
+<!-- excerpt_separator -->
 
 ## Wanted features
 

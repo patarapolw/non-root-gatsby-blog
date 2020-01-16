@@ -9,7 +9,7 @@ tag:
 
 A list of classes / functions I use repeatedly across projects. Also, please see ^^post blog/2018/02/python-decorators.md^^
 
-===
+<!-- excerpt_separator -->
 
 ```python
 import collections

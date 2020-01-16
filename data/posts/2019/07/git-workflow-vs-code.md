@@ -11,7 +11,7 @@ tag:
 
 I am talking about `git branch` and `git worktree add`; and also, `git merge` on GitHub website.
 
-===
+<!-- excerpt_separator -->
 
 Branching in VS Code is as easy as click and type. The option in on the lower left corner.
 

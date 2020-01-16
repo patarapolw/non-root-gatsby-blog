@@ -9,7 +9,7 @@ tag:
 
 What I find to be important are, of course, security. The close second is ease of editing / customization. The third is beauty.
 
-===
+<!-- excerpt_separator -->
 
 - 2FA -- I use WordFence
 - Login notifier

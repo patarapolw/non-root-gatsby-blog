@@ -40,7 +40,7 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-===
+<!-- excerpt_separator -->
 
 ```python
 # webview/controller.py
