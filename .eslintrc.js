@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'react/prop-types': 0,
     'arrow-parens': ['error', 'always'],
     'quote-props': ['error', 'as-needed'],
     'comma-dangle': ['error', 'always-multiline'],

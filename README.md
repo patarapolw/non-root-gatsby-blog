@@ -107,3 +107,6 @@ module.exports = {
   ],
 }
 ```
+
+- `yarn install` to link CLI script to workspace.
+- Now, test running GraphQL by going to `/__graphql` in the browser.

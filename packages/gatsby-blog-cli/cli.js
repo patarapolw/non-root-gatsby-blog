@@ -16,7 +16,7 @@ const { argv } = yargs
     default: path.resolve(process.cwd(), 'package.json'),
   })
 
-fs.writeFileSync('.cli-input.json', JSON.stringify(argv))
+fs.writeFileSync(path.join(__dirname, '.cli-input.json'), JSON.stringify(argv))
 
 spawnSync('yarn', ['start'], {
   cwd: __dirname,

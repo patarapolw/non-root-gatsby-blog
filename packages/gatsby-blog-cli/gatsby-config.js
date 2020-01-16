@@ -1,3 +1,5 @@
+const yaml = require('js-yaml')
+
 const siteMetadata = require('./config')
 
 module.exports = {
@@ -7,6 +9,13 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         excerpt_separator: '===',
+        engines: {
+          yaml: {
+            parse: (s) => yaml.safeLoad(s, {
+              schema: yaml.JSON_SCHEMA,
+            }),
+          },
+        },
       },
     },
     {
