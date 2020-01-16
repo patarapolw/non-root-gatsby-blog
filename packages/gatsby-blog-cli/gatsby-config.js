@@ -32,13 +32,5 @@ module.exports = {
         name: 'hidden',
       },
     },
-    {
-      resolve: 'gatsby-plugin-static-folders',
-      options: {
-        folders: [
-          `${process.env.ROOT}/media`,
-        ],
-      },
-    },
   ],
 }

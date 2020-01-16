@@ -1,3 +1,7 @@
+const path = require('path')
+
+const fs = require('fs-extra')
+const rimraf = require('rimraf')
 /**
  * I use `momentjs`, because `momentjs` is already included in Gatsby
  */
@@ -33,6 +37,24 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       },
     }),
   ])
+}
+
+exports.onPostBuild = () => {
+  rimraf.sync(
+    path.join(process.env.ROOT, 'dist'),
+  )
+  fs.copySync(
+    path.join(__dirname, 'public'),
+    path.join(process.env.ROOT, 'dist'),
+  )
+  fs.copySync(
+    path.join(process.env.ROOT, 'media'),
+    path.join(process.env.ROOT, 'dist/media'),
+  )
+}
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use('/media', require('express').static(path.join(process.env.ROOT, 'media')))
 }
 
 function customDateStringToEpoch (date) {

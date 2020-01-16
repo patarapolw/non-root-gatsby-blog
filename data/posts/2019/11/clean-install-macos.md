@@ -11,6 +11,7 @@ tag:
 ---
 
 [Reformatting macOS](https://www.imore.com/how-to-prepare-mac-for-sale#reformat-your-hard-drive) is quite easy, but let's see what I do next, for my
+
 - Office work
 - Dev hobby
 - Language learning (Japanese, Chinese)
@@ -25,23 +26,23 @@ tag:
 - [Chrome browser](https://www.google.com/chrome/) and/or [Chromium](https://www.chromium.org/getting-involved/download-chromium)
 - Enable these feature, which are, for some reasons, disabled by default
 
-![Tap to click](/build/media/2019-11-30/tap-to-click.png)
+![Tap to click](/media/2019-11-30/tap-to-click.png)
 
 - Tap to click
 
-![App expose](/build/media/2019-11-30/app-expose.png)
+![App expose](/media/2019-11-30/app-expose.png)
 
 - App expose
 
-![Three finger drag](/build/media/2019-11-30/three-finger-drag.png)
+![Three finger drag](/media/2019-11-30/three-finger-drag.png)
 
 - Three finger drag -- This one is a little tricky as it is [hidden in Accessibilities](https://www.makeuseof.com/tag/three-finger-drag-mac/)
 
-![dock settings](/build/media/2019-11-30/dock-settings.png)
+![dock settings](/media/2019-11-30/dock-settings.png)
 
 - Tweak Dock Settings. -- These are my settings.
 
-![dock](/build/media/2019-11-30/dock.png)
+![dock](/media/2019-11-30/dock.png)
 
 - Remove many icons in the dock, and put in necessary ones.
 
@@ -51,13 +52,13 @@ tag:
 - Xcode -- Xcode has needed compilers for macOS, when it also includes IDE. Xcode is shit, in that it might need 20+ GB to run installer, and takes about 15 GB disk space. It is also needed for many dev tools on macOS (the ones that use `xcode-build`).
 - Setup Git settings -- <https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address>
 - [Node version manager](https://github.com/nvm-sh/nvm)
-  - Node.js is a JavaScript runtime outside a browser. 
-  - I use v10.17.0 to ensure that it is compatible with most CLI and CMS. 
+  - Node.js is a JavaScript runtime outside a browser.
+  - I use v10.17.0 to ensure that it is compatible with most CLI and CMS.
   - I use this instead of downloading Node.js from the official website, or installing directly via Homebrew
 - [pvenv](https://github.com/pyenv/pyenv)
   - Python is already present on macOS, but it is Python 2. pyenv helps manage Python versions better than the official website itself.
   - Ruby has the [same problems](/post/2019/07/macos-ruby-python). You should look for [rvm](https://rvm.io/) or [rbenv](https://github.com/rbenv/rbenv) if you plan on using Ruby or [install Jekyll](/post/2019/07/github-pages-blog).
-- [Visual Studio Code](https://code.visualstudio.com/) and/or [VSCodium](https://github.com/VSCodium/vscodium) -- best editor for TypeScript (and probably JavaScript). 
+- [Visual Studio Code](https://code.visualstudio.com/) and/or [VSCodium](https://github.com/VSCodium/vscodium) -- best editor for TypeScript (and probably JavaScript).
   - I haven't developed much liking to [WebStorm](https://www.jetbrains.com/webstorm/) in order to purchase it. (My impression? -- much similar to VSCode.)
   - I failed to customize [Atom IDE](https://atom.io/) to my liking. I prefer to have both VSCode and VSCodium on my computer instead.
   - [Sublime Text](https://www.sublimetext.com/) might be OK, but I haven't tried it for a while. -- I tend to think that commercial-backed products might be better than free counterparts.
