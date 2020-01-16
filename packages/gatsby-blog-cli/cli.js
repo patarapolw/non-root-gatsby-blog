@@ -39,7 +39,7 @@ spawnSync('yarn', [
 })
 
 if (argv.publish) {
-  ghPages.publish(path.resolve(argv.root, 'dist'), (err) => {
+  ghPages.publish(path.join(argv.pkg, '../dist'), (err) => {
     if (err) {
       console.error(err)
       console.error('Not published')

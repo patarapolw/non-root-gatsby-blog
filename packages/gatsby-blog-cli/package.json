@@ -10,7 +10,7 @@
   "scripts": {
     "start": "gatsby develop",
     "tsc": "tsc",
-    "build": "gatsby build"
+    "build": "gatsby build --prefix-paths"
   },
   "dependencies": {
     "ajv": "^6.10.2",

@@ -40,16 +40,18 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 }
 
 exports.onPostBuild = () => {
+  const pkgPath = path.dirname(process.env.PKG)
+
   rimraf.sync(
-    path.join(process.env.ROOT, 'dist'),
+    path.join(pkgPath, 'dist'),
   )
   fs.copySync(
     path.join(__dirname, 'public'),
-    path.join(process.env.ROOT, 'dist'),
+    path.join(pkgPath, 'dist'),
   )
   fs.copySync(
     path.join(process.env.ROOT, 'media'),
-    path.join(process.env.ROOT, 'dist/media'),
+    path.join(pkgPath, 'dist/media'),
   )
 }
 
