@@ -88,3 +88,39 @@ module.exports = {
   ]
 }
 ```
+
+Actually, I have also created [src/pages/index.jsx](/packages/gatsby-blog-cli/src/pages/index.jsx) but it isn't really magic.
+
+## Bonus
+
+I replace [gatsby-plugin-static-folders](https://www.gatsbyjs.org/packages/gatsby-plugin-static-folders/) with
+
+```js
+// gatsby-node.js
+
+exports.onPostBuild = () => {
+  rimraf.sync(
+    path.join(process.env.ROOT, 'dist'),
+  )
+  fs.copySync(
+    path.join(__dirname, 'public'),
+    path.join(process.env.ROOT, 'dist'),
+  )
+  fs.copySync(
+    path.join(process.env.ROOT, 'media'),
+    path.join(process.env.ROOT, 'dist/media'),
+  )
+}
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use('/media', require('express').static(path.join(process.env.ROOT, 'media')))
+}
+```
+
+And also deleted `postbuild.js`.
+
+I found the original source code for `gatsby-plugin-static-folders` here -- <https://github.com/imdaveead/plugins/tree/master/gatsby-plugin-static-folders>.
+
+## Next Episode
+
+I will attempt dynamic page creation, with [fallback to `404.html`](https://help.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) or `200.html` next time.
