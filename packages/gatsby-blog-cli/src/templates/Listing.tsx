@@ -19,6 +19,9 @@ export const query = graphql`
           tag
           image
         }
+        fields {
+          slug
+        }
         correctedDateEpoch
       }
       totalCount
@@ -39,7 +42,7 @@ const Listing = ({ data, pageContext }: { data: any; pageContext: any }) => {
           { pageNumber > 1 ? (
             <Link
               className="pagination-previous"
-              to={ pageNumber > 2 ? `/blog/${pageNumber - 1}` : '/' }
+              to={ pageNumber > 2 ? `/page/${pageNumber - 1}` : '/' }
             >&lt;</Link>
           ) : (
             <button disabled className="pagination-previous">&lt;</button>
@@ -50,7 +53,7 @@ const Listing = ({ data, pageContext }: { data: any; pageContext: any }) => {
           { pageNumber < pageCount ? (
             <Link
               className="pagination-next"
-              to={ `/blog/${pageNumber + 1}` }
+              to={ `/page/${pageNumber + 1}` }
             >&gt;</Link>
           ) : (
             <button disabled className="pagination-next">&gt;</button>

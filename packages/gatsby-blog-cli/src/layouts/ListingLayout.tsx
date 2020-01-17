@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import moment from 'moment'
+import { Link } from 'gatsby'
 
 const my1 = css`
   margin-top: 1em;
@@ -24,7 +25,13 @@ const App = ({ nodes, tagName, pagination }: {
         return (
           <div key={ title } className="card" css={my1}>
             <div className="card-content">
-              <h1 className="title">{ title }</h1>
+              <Link to={ `/posts${el.fields.slug}` }>
+                <h2 className="title" css={css`
+                :hover {
+                  color: blue;
+                }
+                `}>{ title }</h2>
+              </Link>
               <div css={css`height: 1.5em; margin-bottom: 2em;`}>
                 <small className="is-pulled-right">{ moment(el.correctedDateEpoch).format('LL') }</small>
               </div>
