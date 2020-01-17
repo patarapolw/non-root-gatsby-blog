@@ -19,6 +19,7 @@
     "dot-prop": "^5.2.0",
     "fs-extra": "^8.1.0",
     "gatsby": "^2.18.22",
+    "gatsby-plugin-typescript": "^2.1.26",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.48",
     "gh-pages": "^2.2.0",

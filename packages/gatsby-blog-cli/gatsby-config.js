@@ -13,6 +13,7 @@ module.exports = {
   pathPrefix: repoUrl ? `/${repoUrl.trim().match(/([^/]+)\.git$/)[1]}` : '/',
   siteMetadata,
   plugins: [
+    'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

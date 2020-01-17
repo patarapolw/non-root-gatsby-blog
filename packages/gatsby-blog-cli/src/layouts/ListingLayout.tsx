@@ -1,42 +1,30 @@
 /** @jsx jsx */
-import { graphql } from 'gatsby'
-import moment from 'moment'
 import { jsx, css } from '@emotion/core'
+import moment from 'moment'
 
-export const query = graphql`
-  query MyQuery {
-    allMarkdownRemark(
-      sort: {fields: frontmatter___date, order: DESC},
-      filter: {isPast: {eq: true}},
-      limit: 5
-    ) {
-      nodes {
-        excerpt(truncate: true, format: HTML)
-        frontmatter {
-          title
-          tag
-          image
-        }
-        correctedDateEpoch
-      }
-      totalCount
-    }
-  }
+const my1 = css`
+  margin-top: 1em;
+  margin-bottom: 1em;
 `
 
-const App = ({ data }) => (
+const App = ({ nodes, tagName, pagination }: {
+  nodes: any[]
+  tagName?: string
+  pagination: any
+}) => (
   <div className="columns">
     <div className="column is-three-fifths-desktop is-offset-one-fifth-desktop">
-      { data.allMarkdownRemark.nodes.map((el) => {
+      { tagName ? (
+        <h1 className="title" css={my1}>{ tagName }</h1>
+      ) : null }
+      { nodes.map((el) => {
         const fm = el.frontmatter
+        const title = fm.title || el.fields.slug
 
         return (
-          <div key={ fm.title } className="card" css={css`
-            margin-top: 1em;
-            margin-bottom: 1em;
-          `}>
+          <div key={ title } className="card" css={my1}>
             <div className="card-content">
-              <h1 className="title">{ fm.title }</h1>
+              <h1 className="title">{ title }</h1>
               <div css={css`height: 1.5em; margin-bottom: 2em;`}>
                 <small className="is-pulled-right">{ moment(el.correctedDateEpoch).format('LL') }</small>
               </div>
@@ -59,13 +47,7 @@ const App = ({ data }) => (
           </div>
         )
       }) }
-      <nav className="pagination is-centered" role="navigation" ariaLabel="pagination">
-        <button className="pagination-previous" disabled>&lt;</button>
-        <span className="pagination-list" css={css`width: 60vw;`}>
-          Page 1 of { Math.ceil(data.allMarkdownRemark.totalCount / 5).toLocaleString() }
-        </span>
-        <button className="pagination-next">&gt;</button>
-      </nav>
+      { pagination }
     </div>
   </div>
 )
