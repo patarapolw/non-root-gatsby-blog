@@ -40,7 +40,7 @@ const App = ({ nodes, tagName, pagination }: {
                 <div className="columns" css={css`flex-direction: row-reverse;`}>
                   <div className="column is-two-fifths">
                     <figure className="image">
-                      <img alt={ fm.title } src={ fm.image } />
+                      <img alt={ fm.title } data-src={ fm.image } className="lazyload" />
                     </figure>
                   </div>
                   <div className="column">

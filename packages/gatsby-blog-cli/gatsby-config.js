@@ -14,6 +14,7 @@ module.exports = {
   siteMetadata,
   plugins: [
     'gatsby-plugin-typescript',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -25,6 +26,10 @@ module.exports = {
             }),
           },
         },
+        plugins: [
+          'gatsby-remark-images',
+          'gatsby-remark-lazy-load',
+        ],
       },
     },
     {

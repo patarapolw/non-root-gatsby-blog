@@ -3,3 +3,6 @@
 !*.jsx
 !*.ts
 !*.tsx
+tmp
+dist
+node_modules

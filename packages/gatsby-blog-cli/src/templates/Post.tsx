@@ -42,7 +42,7 @@ const Post = ({ data }: any) => {
             { fm.image ? (
               <div className="media">
                 <figure className="image">
-                  <img alt={ title } src={ fm.image } />
+                  <img alt={ title } data-src={ fm.image } className="lazyload" />
                 </figure>
               </div>
             ) : null }
