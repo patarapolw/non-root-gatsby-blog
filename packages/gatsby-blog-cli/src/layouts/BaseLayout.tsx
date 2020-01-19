@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { navigate } from '@reach/router'
 
 const BaseLayout = ({ children }: any) => {
-  const [q, setQ] = useState(() => new URL(location.href).searchParams.get('q') || '')
+  const [q, setQ] = useState(() => {
+    return typeof location !== 'undefined' ? new URL(location.href).searchParams.get('q') || '' : ''
+  })
 
   return (
     <div>

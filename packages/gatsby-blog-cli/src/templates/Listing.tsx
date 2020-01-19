@@ -43,11 +43,11 @@ const Listing = ({ data, pageContext }: any) => {
   const pageNumber = pageContext.currentPage
 
   const loadQ = async (q: string) => {
-    if (!documents) {
+    if (!documents && typeof fetch !== 'undefined') {
       documents = await fetch(`${globalHistory.location.origin}/search.json`).then((r) => r.json())
       jsSearch.addDocuments(documents as any[])
     }
-    const r = q ? jsSearch.search(q) : documents as any[]
+    const r = (q ? jsSearch.search(q) : documents) || []
 
     setState({
       q,
@@ -61,7 +61,7 @@ const Listing = ({ data, pageContext }: any) => {
   }
 
   const [s, setState] = useState(() => {
-    const q = new URL(location.href).searchParams.get('q') || ''
+    const q = typeof location !== 'undefined' ? new URL(location.href).searchParams.get('q') || '' : ''
     const s = {
       q,
       nodes: q ? [] : data.allMarkdownRemark.nodes,
