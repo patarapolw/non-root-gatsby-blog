@@ -46,14 +46,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___date], order: DESC },
+          filter: {isPast: {eq: true}}
         ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
+          nodes {
+            excerpt(truncate: true, format: HTML)
+            frontmatter {
+              title
+              tag
+              image
             }
+            fields {
+              slug
+            }
+            correctedDateEpoch
           }
         }
       }
@@ -63,7 +69,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.allMarkdownRemark.nodes
   const postsPerPage = 5
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -80,13 +86,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   posts.forEach((p) => {
     createPage({
-      path: `/posts${p.node.fields.slug}`,
+      path: `/posts${p.fields.slug}`,
       component: path.resolve('./src/templates/Post.tsx'),
       context: {
-        slug: p.node.fields.slug,
+        slug: p.fields.slug,
       },
     })
   })
+
+  fs.writeFileSync(path.join(__dirname, 'public/search.json'), JSON.stringify(posts))
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
