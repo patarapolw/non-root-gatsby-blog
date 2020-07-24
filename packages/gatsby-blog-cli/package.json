@@ -16,7 +16,7 @@
     "@emotion/core": "^10.0.27",
     "@types/js-search": "^1.4.0",
     "ajv": "^6.10.2",
-    "bulma": "^0.8.0",
+    "bulma": "^0.9.0",
     "dot-prop": "^5.2.0",
     "fs-extra": "^8.1.0",
     "gatsby": "^2.18.22",
