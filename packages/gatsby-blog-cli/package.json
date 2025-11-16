@@ -28,7 +28,7 @@
     "gatsby-transformer-remark": "^2.6.48",
     "gh-pages": "^2.2.0",
     "js-search": "^1.4.3",
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^4.1.1",
     "lazysizes": "^5.2.0",
     "moment": "^2.24.0",
     "react": "^16.12.0",
